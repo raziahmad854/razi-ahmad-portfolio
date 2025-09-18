@@ -351,43 +351,6 @@ const Contact = () => {
             </Card>
           </motion.div>
         </div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-16"
-        >
-          <Card className="p-8 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 border-primary-200 dark:border-primary-800">
-            <h3 className="text-2xl font-bold mb-4 gradient-text">
-              Ready to Build Something Amazing?
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-              Whether you have a specific project in mind or just want to explore possibilities, 
-              I'm here to help bring your ideas to life with modern, scalable solutions.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
-                size="lg"
-                onClick={() => window.open('mailto:raziahmad854301@gmail.com', '_blank')}
-              >
-                <Mail size={20} />
-                Start a Project
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => window.open('https://linkedin.com/in/razi-a-26a318209', '_blank')}
-              >
-                <Linkedin size={20} />
-                Connect on LinkedIn
-              </Button>
-            </div>
-          </Card>
-        </motion.div>
       </div>
     </section>
   )
