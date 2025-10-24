@@ -20,47 +20,47 @@ const Projects = () => {
         'Real-time progress tracking'
       ],
       impact: 'Innovative AI integration',
-      github: 'https://github.com/raziahmad854',
-      demo: '#',
+      github: 'https://github.com/raziahmad854/ai-escrow',
+      demo: 'Https://ai-escrow-six.vercel.app/ ',
       category: 'Full-Stack',
       icon: Zap
     },
-    {
-      title: 'HealthCare Cost Estimation Platform',
-      description: 'Cross-platform healthcare cost estimator built with React.js, React Native, and TypeScript. Serves thousands of users with optimized performance through GraphQL integration.',
-      image: '🏥',
-      technologies: ['React.js', 'React Native', 'TypeScript', 'GraphQL', 'Redux'],
-      features: [
-        'Cross-platform compatibility (Web + Mobile)',
-        'Advanced cost calculation algorithms',
-        'Optimized GraphQL queries',
-        'Redux state management',
-        'Responsive design'
-      ],
-      impact: '30% performance improvement',
-      github: 'https://github.com/raziahmad854',
-      demo: '#',
-      category: 'Healthcare',
-      icon: Smartphone
-    },
-    {
-      title: 'MicroUI Microservice Platform',
-      description: 'TypeScript-based MicroUI microservice with GraphQL for reusable frontend modules. Successfully integrated across 3+ enterprise applications, reducing duplicate development significantly.',
-      image: '⚡',
-      technologies: ['TypeScript', 'GraphQL', 'Microservices', 'React.js', 'Docker'],
-      features: [
-        'Modular microservice architecture',
-        'GraphQL API integration',
-        'Reusable UI components',
-        'Enterprise-grade scalability',
-        'Docker containerization'
-      ],
-      impact: '40% reduction in duplicate development',
-      github: 'https://github.com/raziahmad854',
-      demo: '#',
-      category: 'Enterprise',
-      icon: Code2
-    }
+    // {
+    //   title: 'HealthCare Cost Estimation Platform',
+    //   description: 'Cross-platform healthcare cost estimator built with React.js, React Native, and TypeScript. Serves thousands of users with optimized performance through GraphQL integration.',
+    //   image: '🏥',
+    //   technologies: ['React.js', 'React Native', 'TypeScript', 'GraphQL', 'Redux'],
+    //   features: [
+    //     'Cross-platform compatibility (Web + Mobile)',
+    //     'Advanced cost calculation algorithms',
+    //     'Optimized GraphQL queries',
+    //     'Redux state management',
+    //     'Responsive design'
+    //   ],
+    //   impact: '30% performance improvement',
+    //   github: 'https://github.com/raziahmad854',
+    //   demo: '#',
+    //   category: 'Healthcare',
+    //   icon: Smartphone
+    // },
+    // {
+    //   title: 'MicroUI Microservice Platform',
+    //   description: 'TypeScript-based MicroUI microservice with GraphQL for reusable frontend modules. Successfully integrated across 3+ enterprise applications, reducing duplicate development significantly.',
+    //   image: '⚡',
+    //   technologies: ['TypeScript', 'GraphQL', 'Microservices', 'React.js', 'Docker'],
+    //   features: [
+    //     'Modular microservice architecture',
+    //     'GraphQL API integration',
+    //     'Reusable UI components',
+    //     'Enterprise-grade scalability',
+    //     'Docker containerization'
+    //   ],
+    //   impact: '40% reduction in duplicate development',
+    //   github: 'https://github.com/raziahmad854',
+    //   demo: '#',
+    //   category: 'Enterprise',
+    //   icon: Code2
+    // }
   ]
 
   const getCategoryColor = (category: string) => {

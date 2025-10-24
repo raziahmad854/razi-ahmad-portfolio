@@ -128,7 +128,7 @@ const Hero = () => {
               <Mail size={20} />
               Get In Touch
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               onClick={downloadResume}
@@ -136,7 +136,7 @@ const Hero = () => {
             >
               <Download size={20} />
               Download Resume
-            </Button>
+            </Button> */}
           </motion.div>
 
           {/* Social Links */}
