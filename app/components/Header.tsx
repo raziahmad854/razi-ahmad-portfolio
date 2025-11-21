@@ -78,26 +78,26 @@ const Header = () => {
             </div>
           </div>
 
-            {/* Theme Toggle & Mobile Menu Button */}
-            <div className="flex items-center space-x-4">
-              <ThemeToggle />
-              
-              {/* Mobile menu button */}
-              <div className="md:hidden">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="p-2"
-                >
-                  {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-                </Button>
-              </div>
+          {/* Theme Toggle & Mobile Menu Button */}
+          <div className="flex items-center space-x-4">
+            <ThemeToggle />
+            
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="p-2"
+              >
+                {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              </Button>
             </div>
           </div>
         </div>
-  
-          {/* Mobile Navigation */}
+      </div>
+
+        {/* Mobile Navigation */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
