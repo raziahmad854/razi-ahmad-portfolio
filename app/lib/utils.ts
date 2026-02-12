@@ -18,7 +18,7 @@ export const scrollToSection = (sectionId: string) => {
 export const downloadResume = () => {
   const link = document.createElement('a')
   link.href = '/resume.pdf'
-  link.download = 'Razi_Ahmad_Resume_Frontend.pdf'
+  link.download = 'Razi_Ahmad_Resume.pdf'
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
