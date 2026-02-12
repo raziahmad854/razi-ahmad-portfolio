@@ -186,14 +186,14 @@ const Hero = () => {
                   </div>
                 </div>
                 
-                {/* When you add your photo, uncomment this: */}
-                {/* <Image
-                  src="/images/profile.jpg"
+                
+                <Image
+                  src="/images/photo.jpg"
                   alt="Razi Ahmad"
                   fill
                   className="object-cover"
                   priority
-                /> */}
+                />
               </div>
 
               {/* Floating Badge */}
