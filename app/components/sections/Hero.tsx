@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowDown, Download, Mail, Github, Linkedin, MapPin, Briefcase } from 'lucide-react'
+import { ArrowDown, Download, Mail, Github, Linkedin, MapPin, Briefcase, Zap } from 'lucide-react'
 import { scrollToSection, downloadResume } from '@/lib/utils'
 import Button from '../ui/Button'
 import Image from 'next/image'
@@ -51,24 +51,36 @@ const Hero = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-6 text-center lg:text-left"
           >
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 dark:bg-purple-900/40 rounded-full text-sm font-medium text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800"
-            >
-              <Briefcase size={16} />
-              <span>Associate Software Engineer 2 at Optum</span>
-            </motion.div>
+            {/* Badges */}
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 dark:bg-purple-900/40 rounded-full text-sm font-medium text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800"
+              >
+                <Briefcase size={16} />
+                <span>Associate SDE 2 at Optum</span>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/40 rounded-full text-sm font-medium text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800"
+              >
+                <Zap size={16} />
+                <span>Immediate Joiner</span>
+              </motion.div>
+            </div>
 
             {/* Name */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.4 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold"
             >
               Hi, I'm{' '}
@@ -81,7 +93,7 @@ const Hero = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.5 }}
               className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300"
             >
               Frontend Engineer
@@ -91,8 +103,8 @@ const Hero = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl"
+              transition={{ delay: 0.6 }}
+              className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0"
             >
               Crafting scalable, high-performance web & mobile applications with{' '}
               <span className="font-semibold text-purple-600 dark:text-purple-400">React.js</span>,{' '}
@@ -104,8 +116,8 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="flex items-center gap-2 text-gray-600 dark:text-gray-400"
+              transition={{ delay: 0.7 }}
+              className="flex items-center gap-2 text-gray-600 dark:text-gray-400 justify-center lg:justify-start"
             >
               <MapPin size={18} />
               <span>Delhi, India</span>
@@ -115,8 +127,8 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
-              className="flex flex-wrap gap-4 pt-4"
+              transition={{ delay: 0.8 }}
+              className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start"
             >
               <Button
                 size="lg"
@@ -140,8 +152,8 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="flex gap-4 pt-4"
+              transition={{ delay: 0.9 }}
+              className="flex gap-4 pt-4 justify-center lg:justify-start"
             >
               {socialLinks.map((link, index) => (
                 <motion.a
@@ -165,9 +177,9 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative lg:justify-self-end"
+            className="relative flex justify-center lg:justify-end"
           >
-            <div className="relative w-full max-w-md mx-auto">
+            <div className="relative w-full max-w-sm lg:max-w-lg xl:max-w-xl">
               {/* Decorative Elements */}
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 dark:from-purple-500 dark:via-pink-500 dark:to-blue-500 rounded-full opacity-20 blur-2xl animate-pulse"></div>
               
@@ -188,7 +200,7 @@ const Hero = () => {
                 
                 
                 <Image
-                  src="/images/photo.jpg"
+                  src="/images/profile.jpg"
                   alt="Razi Ahmad"
                   fill
                   className="object-cover"

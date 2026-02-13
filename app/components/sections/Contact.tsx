@@ -77,19 +77,19 @@ const Contact = () => {
               <span className="text-sm font-semibold text-purple-700 dark:text-purple-300">Let's Connect</span>
             </motion.div>
 
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-gray-900 via-purple-600 to-gray-900 dark:from-white dark:via-purple-400 dark:to-white bg-clip-text text-transparent">
                 Get In Touch
               </span>
             </h2>
             
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-4">
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-4 px-4">
               Have a project in mind or just want to chat about tech? I'd love to hear from you!
             </p>
 
-            <div className="flex items-center justify-center gap-2 text-gray-600 dark:text-gray-400">
+            <div className="flex items-center justify-center gap-2 text-gray-600 dark:text-gray-400 px-4">
               <MapPin size={18} />
-              <span>Based in Delhi, India • Available Worldwide</span>
+              <span className="text-sm sm:text-base">Based in Delhi, India • Available Worldwide</span>
             </div>
           </motion.div>
 
@@ -140,10 +140,10 @@ const Contact = () => {
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
             
             <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
                 Ready to bring your ideas to life?
               </h3>
-              <p className="text-lg text-purple-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-purple-100 mb-8 max-w-2xl mx-auto px-4">
                 Whether it's a new project, collaboration opportunity, or just a friendly chat about tech—I'm all ears!
               </p>
               

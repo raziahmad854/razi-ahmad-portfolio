@@ -15,7 +15,8 @@ const Projects = () => {
       gradient: 'from-purple-500 to-pink-500',
       stats: { impact: 'AI-Powered', metric: 'Innovative' },
       github: 'https://github.com/raziahmad854',
-      demo: '#',
+      demo: 'https://ai-escrow-six.vercel.app/',
+      showLinks: true,
     },
     {
       title: 'Healthcare Cost Estimator',
@@ -24,8 +25,7 @@ const Projects = () => {
       tags: ['React Native', 'TypeScript', 'GraphQL', 'Redux'],
       gradient: 'from-blue-500 to-cyan-500',
       stats: { impact: '30% Faster', metric: '1000s Users' },
-      github: 'https://github.com/raziahmad854',
-      demo: '#',
+      showLinks: false,
     },
     {
       title: 'MicroUI Platform',
@@ -34,8 +34,7 @@ const Projects = () => {
       tags: ['TypeScript', 'GraphQL', 'Microservices', 'Docker'],
       gradient: 'from-orange-500 to-red-500',
       stats: { impact: '40% Less Code', metric: 'Enterprise Scale' },
-      github: 'https://github.com/raziahmad854',
-      demo: '#',
+      showLinks: false,
     }
   ]
 
@@ -127,21 +126,23 @@ const Projects = () => {
                   </div>
                   
                   {/* Action Buttons */}
-                  <div className="flex gap-3">
-                    <button
-                      onClick={() => window.open(project.demo, '_blank')}
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
-                    >
-                      <ExternalLink size={16} />
-                      <span>View</span>
-                    </button>
-                    <button
-                      onClick={() => window.open(project.github, '_blank')}
-                      className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-gray-300 dark:border-gray-700 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-                    >
-                      <Github size={16} />
-                    </button>
-                  </div>
+                  {project.showLinks && (
+                    <div className="flex gap-3">
+                      <button
+                        onClick={() => window.open(project.demo, '_blank')}
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+                      >
+                        <ExternalLink size={16} />
+                        <span>View Live</span>
+                      </button>
+                      <button
+                        onClick={() => window.open(project.github, '_blank')}
+                        className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-gray-300 dark:border-gray-700 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        <Github size={16} />
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
