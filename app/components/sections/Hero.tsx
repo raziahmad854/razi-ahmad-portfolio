@@ -62,7 +62,7 @@ const Hero = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 dark:bg-purple-900/40 rounded-full text-sm font-medium text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800"
               >
                 <Briefcase size={16} />
-                <span>Associate SDE 2 at Optum</span>
+                <span>Software Engineer at Optum</span>
               </motion.div>
               
               <motion.div
@@ -72,7 +72,7 @@ const Hero = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/40 rounded-full text-sm font-medium text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800"
               >
                 <Zap size={16} />
-                <span>Immediate Joiner</span>
+                <span>Immediate Joiner, 2 years Exp</span>
               </motion.div>
             </div>
 
