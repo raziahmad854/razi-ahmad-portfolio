@@ -9,7 +9,7 @@ const files = {
   "name": "razi-ahmad-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Modern portfolio website for Razi Ahmad - Frontend Engineer",
+  "description": "Modern portfolio website for Razi Ahmad - Full Stack Engineer",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -43,7 +43,12 @@ const files = {
     "react",
     "typescript",
     "tailwindcss",
-    "frontend-engineer"
+    "fullstack-engineer",
+    "mern-stack",
+    "nodejs",
+    "graphql",
+    "python",
+    "full-stack-development"
   ],
   "author": "Razi Ahmad <raziahmad854301@gmail.com>",
   "homepage": "https://github.com/raziahmad854/portfolio"

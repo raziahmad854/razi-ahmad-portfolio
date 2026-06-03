@@ -72,7 +72,7 @@ const Hero = () => {
                 className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/40 rounded-full text-sm font-medium text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800"
               >
                 <Zap size={16} />
-                <span>Immediate Joiner, 2 years Exp</span>
+                <span>2 years Exp</span>
               </motion.div>
             </div>
 
@@ -96,7 +96,7 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300"
             >
-              Frontend Engineer
+              Full Stack Engineer
             </motion.p>
 
             {/* Description */}
@@ -106,10 +106,11 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0"
             >
-              Crafting scalable, high-performance web & mobile applications with{' '}
-              <span className="font-semibold text-purple-600 dark:text-purple-400">React.js</span>,{' '}
-              <span className="font-semibold text-pink-600 dark:text-pink-400">TypeScript</span>, and{' '}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">AI integration</span>.
+              Building scalable full-stack web & mobile applications with{' '}
+              <span className="font-semibold text-purple-600 dark:text-purple-400">MERN Stack</span>,{' '}
+              <span className="font-semibold text-pink-600 dark:text-pink-400">TypeScript</span>,{' '}
+              <span className="font-semibold text-blue-600 dark:text-blue-400">GraphQL</span>, and{' '}
+              <span className="font-semibold text-green-600 dark:text-green-400">Python (FastAPI)</span>.
             </motion.p>
 
             {/* Location */}

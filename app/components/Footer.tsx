@@ -37,7 +37,7 @@ const Footer = () => {
             <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
               Razi Ahmad
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">Frontend Engineer • React Specialist • AI Enthusiast</p>
+            <p className="text-gray-600 dark:text-gray-400">Full Stack Engineer • MERN Stack • Python, GraphQL & Node.js Expert</p>
           </motion.div>
 
           {/* Social Links */}
